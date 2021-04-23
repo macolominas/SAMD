@@ -8,6 +8,7 @@
 addpath(genpath('DeCom-master')); %to compare with RDBR and MMD (developed by Haizhao Yang)
 
 [x, hdr, label, fs, scle, offs] = read_edf('eeg44.edf');
+% Please, download file "eeg44.edf" from https://zenodo.org/record/2547147#.YIM41lVKjIU and run this code.
 fs = 256;
 index = 343*fs+1:374*fs;
 x = x{16}(index) - x{10}(index); 
